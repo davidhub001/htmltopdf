@@ -8,7 +8,8 @@ function convert($nomfichier,$page){
     $dompdf = new Dompdf(array('enable_remote' => true));
     $dompdf->loadHtml(traite_page($page));
     // (Optional) Setup the paper size and orientation
-    $dompdf->setPaper('A4', 'landscape');
+    $dompdf->setPaper('A4', 'portrait');
+    // $dompdf->setPaper('A4', 'landscape');
     // Render the HTML as PDF
     $dompdf->render();
     // Output the generated PDF to Browser
@@ -27,5 +28,5 @@ function traite_url_image($url,$content){
     }
     return $content;
 }
-convert('test',"https://www.centic-mada.com/");
+convert('test',"http://exo.host/htmltopdf/lp3e.php");
 ?>
