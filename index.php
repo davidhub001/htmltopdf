@@ -1,5 +1,6 @@
 <?php
-use Dompdf\Dompdf;
+    
+    use Dompdf\Dompdf;
 function convert($nomfichier,$page){  
     //  include autoloader
     require_once 'dompdf/autoload.inc.php';
@@ -24,9 +25,10 @@ function traite_url_image($url,$content){
     preg_match_all('/<img.*src="(.*)".*\/>/Uims', $content, $array_url);
     foreach($array_url[1] as $k){
         $new_reg = str_replace("/","\/",$k);
-        $content = preg_replace("/$new_reg/Uims", $url.$k, $content);
+        $content = preg_replace("/$new_reg/Uims", $k, $content);
     }
     return $content;
 }
-convert('test',"http://exo.host/htmltopdf/lp3e.php");
+
+convert('test',"http://exo.host/htmltopdf/mmrs.php");
 ?>
