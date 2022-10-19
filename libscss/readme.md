@@ -1,19 +1,19 @@
 une page avec dom
-    .dom-content: page entier sans marge
-    .page-new: nouvel page
-    .dom-row: ligne 
-    .dom-col-*: colonne dans dom-row
-    .top-*: position top
-    .left-*: position left
-    .pad-bottom-*
-    .pad-left-*
-    .pad-rigth-*
-    .pad-top-*
-    .marg-bottom-*
-    .marg-left-*
-    .marg-rigth-*
-    .marg-top-*
-    .text-center
+    <div>.dom-content: page entier sans marge</div>
+    <div>.page-new: nouvel page</div>
+    <div>.dom-row: ligne </div>
+    <div>.dom-col-*: colonne dans dom-row</div>
+    <div>.top-*: position </div>
+    <div>.left-*: position left</div>
+    <div>.pad-bottom-</div>*
+    <div>.pad-left-*</div>
+    <div>.pad-rigth-*</div>
+    <div>.pad-top-*</div>
+    <div>.marg-bottom-*</div>
+    <div>.marg-left-*</div>
+    <div>.marg-rigth-*</div>
+    <div>.marg-top-*</div>
+    <div>.text-center</div>
 
 structure:                      * ---> |1 - 100| etoile = 1 à 100
     dom-content
