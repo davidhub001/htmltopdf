@@ -28,5 +28,5 @@ function traite_url_image($url,$content){
     }
     return $content;
 }
-convert('test',"http://exo.host/htmltopdf/lp3e.php");
+convert('test',"http://exo.host/htmltopdf/page.php");
 ?>

@@ -1,0 +1,76 @@
+.dom-row{
+    display: block;
+    position: relative;
+    div{
+        float: left;
+    }
+   @for $i from 1 through 12 {
+        .dom-col-#{$i}{
+            $w: (100%* $i)/12;
+            width: $w;
+        }
+   }
+}
+@for $i from 1 through 100 {
+    $position: absolute;
+    .top-#{$i}{
+        $t: $i*0.97%;
+        position: $position;
+        top: $t;
+    }
+    .left-#{$i}{
+        $t: $i*0.97%;
+        position: $position;
+        left: $t;
+    }
+
+    .pad-left-#{$i}{
+        $t: $i*0.97%;
+        padding-left: $t;
+    }
+    .pad-rigth-#{$i}{
+        $t: $i*0.97%;
+        padding-right: $t;
+    }
+    .pad-top-#{$i}{
+        $t: $i*0.97%;
+        padding-top: $t;
+    }
+    .pad-bottom-#{$i}{
+        $t: $i*0.97%;
+        padding-bottom: $t;
+    }
+
+    .marg-left-#{$i}{
+        $t: $i*0.97%;
+        margin-left: $t;
+    }
+    .marg-rigth-#{$i}{
+        $t: $i*0.97%;
+        margin-right: $t;
+    }
+    .marg-top-#{$i}{
+        $t: $i*0.97%;
+        margin-top: $t;
+    }
+    .marg-bottom-#{$i}{
+        $t: $i*0.97%;
+        margin-bottom: $t;
+    }
+}
+.dom-content{
+    position: absolute;
+    margin: -45px;
+    &.page-new{
+        page-break-before: always;
+    }
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-rigth{
+    text-align: rigth;
+}
