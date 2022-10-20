@@ -12,7 +12,7 @@ une page avec dom
     <div>.marg-bottom-*</div>
     <div>.marg-left-*</div>
     <div>.marg-rigth-*</div>
-    <div>.marg-top-*</div>
+    <div>.marg-top-#*</div>
     <div>.text-center</div>
 
 structure:                      * ---> |1 - 100| etoile = 1 à 100
