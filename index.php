@@ -6,6 +6,6 @@
 */
 include 'function.php';
 $nom_fichier_pdf = 'test';
-$url_page_scraper = "http://exo.host/htmltopdf/page.php";
+$url_page_scraper = "page.php";
 convert($nom_fichier_pdf, $url_page_scraper);
 ?>
