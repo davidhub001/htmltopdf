@@ -1,0 +1,19 @@
+/*
+    Avant modifier dabord le fichier FontMetrics.php est chager 
+    $chrootValid !== true en $chrootValid == true
+    donner droit 777 au dossier dompdf/lib
+*/
+$url :'libscss/font-family/';
+$url_an :'http://exo.host/htmltopdf/';
+$oswald :'Oswald-VariableFont_wght.ttf';
+$chelaone :'ChelaOne-Regular.ttf';
+
+@font-face {
+    font-family: 'font_1';
+    src: url($url+$chelaone);
+}
+
+@font-face {
+    font-family: 'font_2';
+    src: url($url+$oswald);
+}

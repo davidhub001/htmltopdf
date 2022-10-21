@@ -11,6 +11,22 @@
         }
    }
 }
+.dom_font_2{
+    font: normal font_2;
+    @for $i from 10 through 100 {
+        &.font-size-#{$i}{
+            font-size: $i*1px;
+        }
+    }
+}
+.dom_font_1{
+    font: normal font_1 !important;
+    @for $i from 10 through 100 {
+        &.font-size-#{$i}{
+            font-size: $i*1px;
+        }
+    }
+}
 @for $i from 1 through 100 {
     $position: absolute;
     .top-#{$i}{
